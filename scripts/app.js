@@ -3,7 +3,7 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoid2lsbGlhbWJlbmRhdmlzIiwiYSI6IlVrb3BGVzQifQ.je
 // like `rentals`, `fuel`, `tackleshop` that are set to true for false
 // depending on whether or they exist at a location.
 
-var map = L.mapbox.map('map', 'mapbox.dark')
+var map = L.mapbox.map('map', 'mapbox.dark', {maxZoom: 6, minZoom: 5})
     .setView([42.68, -95.63], 5)
 
 teams = L.geoJson(teams, {
@@ -17,14 +17,14 @@ teams = L.geoJson(teams, {
         })
       });
     }
-  })
+  }).addTo(map);
 
-var routes = L.geoJson(games, {style: style, onEachFeature: onEachFeature}).addTo(map);
+var routes = L.geoJson(games, {style: style, onEachFeature: onEachFeature,
+              filter: function(feature, layer) {
+                      return feature.properties.origin;
+                      }}
+                      ).addTo(map);
 var teams = L.geoJson(teams, {style: style, onEachFeature: onEachFeature}).addTo(map);
-
-// var routes = L.mapbox.featureLayer()
-//     .setGeoJSON(geojsonLayer)
-//     .addTo(map);
 
 function style(feature) {
   return {
@@ -35,8 +35,8 @@ function style(feature) {
   }
 
 function getWeight(p) {
-  return    p >= 3 ? 3 :
-            p >= 2 ? 2 :
+  return    p >= 3 ? 3.5 :
+            p >= 2 ? 2.5 :
             p >= 1 ? 1 :
             1;
   };
@@ -90,7 +90,7 @@ var closeTooltip
     var popup = L.popup({autoPan: false});
 
       popup.setLatLng(e.latlng);
-      popup.setContent('<div class="versusimages">' + '<img src="' + getIcon(layer.feature.properties.origin) + '">' + 'VS.' + '<img src="' + getIcon(layer.feature.properties.dest) + '">' + '</div>' + '<div class="gamesplayed">' + 'Number of games played this season: ' + '<span>' + layer.feature.properties.games + '</span>' + '</div>');
+      popup.setContent('<div class="versusimages">' + '<img class="imgleft" src="' + getIcon(layer.feature.properties.origin) + '">' + '<span>VS.</span>' + '<img class="imgright" src="' + getIcon(layer.feature.properties.dest) + '">' + '</div>' + '<div class="gamesplayed">' + 'Number of games played this season: ' + '<span>' + layer.feature.properties.games + '</span>' + '</div>');
 
       if (!popup._map) popup.openOn(map);
       window.clearTimeout(closeTooltip);
@@ -112,7 +112,7 @@ var closeTooltip
     var popup = L.popup({autoPan: true});
 
       popup.setLatLng(e.latlng);
-      popup.setContent('Cool');
+      popup.setContent('<div class="versusimages">' + '<img class="imgleft" src="' + getIcon(layer.feature.properties.origin) + '">' + '<span>VS.</span>' + '<img class="imgright" src="' + getIcon(layer.feature.properties.dest) + '">' + '</div>' + '<div class="gamesplayed">' + 'Number of games played this season: ' + '<span>' + layer.feature.properties.games + '</span>' + '</div>');
       if (!popup._map) popup.openOn(map);
       window.clearTimeout(closeTooltip);
 
