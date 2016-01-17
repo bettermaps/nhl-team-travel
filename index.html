@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Multiple filters on markers</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href='styles/style.css' rel='stylesheet' />
+</head>
+<body>
+
+<nav class='menu-ui'>
+  <a href='#' class='active' data-filter='all'>Show all</a>
+  <a href='#' data-filter='Avalanche'>Colorado Avalanche</a>
+  <a href='#' data-filter='Blackhawks'>Chicago Blackhawks</a>
+  <a href='#' data-filter='Jackets'>Columbus Blue Jackets</a>
+  <a href='#' data-filter='Blues'>St. Louis Blues</a>
+  <a href='#' data-filter='Bruins'>Boston Bruins</a>
+  <a href='#' data-filter='Canadiens'>Montreal Canadiens</a>
+  <a href='#' data-filter='Canucks'>Toronto Maple Leafs</a>
+  <a href='#' data-filter='Capitals'>Washington Capitals</a>
+  <a href='#' data-filter='Coyotes'>Pheonix Coyotes</a>
+  <a href='#' data-filter='Devils'>New Jersy Devils</a>
+  <a href='#' data-filter='Ducks'>Anaheim Ducks</a>
+  <a href='#' data-filter='Flames'>Calgary Flames</a>
+  <a href='#' data-filter='Flyers'>Philidelphia Flyers</a>
+  <a href='#' data-filter='Hurricanes'>Carolina Hurricanes</a>
+  <a href='#' data-filter='Islanders'>New York Islanders</a>
+  <a href='#' data-filter='Kings'>Los Angeles Kings</a>
+  <a href='#' data-filter='Lightning'>Tampa Bay Lightning</a>
+  <a href='#' data-filter='Leafs'>Toronto Maple Leafs</a>
+  <a href='#' data-filter='Oilers'>Edmonton Oilers</a>
+  <a href='#' data-filter='Panthers'>Florida Panthers</a>
+  <a href='#' data-filter='Penguins'>Pittsburgh Penguins</a>
+  <a href='#' data-filter='Predators'>Nashville Predators</a>
+  <a href='#' data-filter='Rangers'>New York Rangers</a>
+  <a href='#' data-filter='Wings'>Detroit Red Wings</a>
+  <a href='#' data-filter='Sabres'>Buffalo Sabres</a>
+  <a href='#' data-filter='Senators'>Ottawa Senators</a>
+  <a href='#' data-filter='Sharks'>San Jose Sharks</a>
+  <a href='#' data-filter='Stars'>Dallas Stars</a>
+  <a href='#' data-filter='Wild'>Minnesota Wils</a>
+  <a href='#' data-filter='Winnipeg'>Winnipeg Jets</a>
+</nav>
+<div id='map'></div>
+
+<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+<script src="scripts/points.js"></script>
+<script src="scripts/lines.js"></script>
+<script src="scripts/app.js">
+</script>

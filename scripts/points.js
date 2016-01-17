@@ -1,0 +1,37 @@
+var teams = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "Buffalo Sabres", "desc": "Sabres", "x": -78.951416, "y": 42.929078 }, "geometry": { "type": "Point", "coordinates": [ -78.951416, 42.929078, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Toronto Maple Leafs", "desc": "Maple Leafs", "x": -79.376679, "y": 43.656546 }, "geometry": { "type": "Point", "coordinates": [ -79.376679, 43.656546, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Ottawa Senators", "desc": "Senators", "x": -75.702210, "y": 45.415033 }, "geometry": { "type": "Point", "coordinates": [ -75.70221, 45.415033, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Montreal Canadiens", "desc": "Canadiens", "x": -73.576355, "y": 45.511351 }, "geometry": { "type": "Point", "coordinates": [ -73.576355, 45.511351, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Boston Bruins", "desc": "Bruins", "x": -71.071472, "y": 42.371938 }, "geometry": { "type": "Point", "coordinates": [ -71.071472, 42.371938, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "New-York Rangers", "desc": "Rangers", "x": -74.026795, "y": 40.715205 }, "geometry": { "type": "Point", "coordinates": [ -74.026795, 40.715205, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Philadelphie Flyers", "desc": "Flyers", "x": -75.169373, "y": 39.957333 }, "geometry": { "type": "Point", "coordinates": [ -75.169373, 39.957333, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Pittsburgh Penguins", "desc": "Penguins", "x": -80.037232, "y": 40.432732 }, "geometry": { "type": "Point", "coordinates": [ -80.037232, 40.432732, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Columbus Blue Jackets", "desc": "Blues", "x": -82.948609, "y": 39.979646 }, "geometry": { "type": "Point", "coordinates": [ -82.948609, 39.979646, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Detroit Red Wings", "desc": "Red Wings", "x": -83.091431, "y": 42.287875 }, "geometry": { "type": "Point", "coordinates": [ -83.091431, 42.287875, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Chicago Black Hawks", "desc": "Blackhawks", "x": -87.617798, "y": 41.855651 }, "geometry": { "type": "Point", "coordinates": [ -87.617798, 41.855651, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Minnesota Wild", "desc": "Wild", "x": -92.988281, "y": 44.840291 }, "geometry": { "type": "Point", "coordinates": [ -92.988281, 44.840291, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Nashville Predators", "desc": "Predators", "x": -86.729737, "y": 36.160940 }, "geometry": { "type": "Point", "coordinates": [ -86.729737, 36.16094, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Carolina Hurricanes", "desc": "Hurricanes", "x": -78.687745, "y": 35.751862 }, "geometry": { "type": "Point", "coordinates": [ -78.687745, 35.751862, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Washington Capitals", "desc": "Capitals", "x": -77.039795, "y": 38.913262 }, "geometry": { "type": "Point", "coordinates": [ -77.039795, 38.913262, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Florida Panthers", "desc": "Panthers", "x": -80.291748, "y": 25.904692 }, "geometry": { "type": "Point", "coordinates": [ -80.291748, 25.904692, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Tampa Bay Lightning", "desc": "Lightning", "x": -82.445069, "y": 27.942004 }, "geometry": { "type": "Point", "coordinates": [ -82.445069, 27.942004, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Winnipeg Jets", "desc": "Winnipeg", "x": -97.207031, "y": 49.837982 }, "geometry": { "type": "Point", "coordinates": [ -97.207031, 49.837982, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "St Louis Blues", "desc": "Blues", "x": -90.289307, "y": 38.673503 }, "geometry": { "type": "Point", "coordinates": [ -90.289307, 38.673503, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Dallas Stars", "desc": "Stars", "x": -96.837159, "y": 32.885123 }, "geometry": { "type": "Point", "coordinates": [ -96.837159, 32.885123, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Edmonton Oilers", "desc": "Oilers", "x": -113.426514, "y": 53.518104 }, "geometry": { "type": "Point", "coordinates": [ -113.426514, 53.518104, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "New York Islanders", "desc": "Islanders", "x": -73.586426, "y": 40.722283 }, "geometry": { "type": "Point", "coordinates": [ -73.586426, 40.722283, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Calgary Flames", "desc": "Flames", "x": -114.107666, "y": 51.183475 }, "geometry": { "type": "Point", "coordinates": [ -114.107666, 51.183475, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Vancouver Canucks", "desc": "Canucks", "x": -123.204346, "y": 49.272106 }, "geometry": { "type": "Point", "coordinates": [ -123.204346, 49.272106, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Colorado Avalanche", "desc": "Avalanche", "x": -105.845948, "y": 39.526077 }, "geometry": { "type": "Point", "coordinates": [ -105.845948, 39.526077, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Phoenix Coyotes", "desc": "Coyotes", "x": -112.111817, "y": 33.442443 }, "geometry": { "type": "Point", "coordinates": [ -112.111817, 33.442443, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "San Jose Sharks", "desc": "Sharks", "x": -121.955567, "y": 37.380634 }, "geometry": { "type": "Point", "coordinates": [ -121.955567, 37.380634, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Los Angeles Kings", "desc": "Kings", "x": -118.483888, "y": 34.136360 }, "geometry": { "type": "Point", "coordinates": [ -118.483888, 34.13636, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Anaheim Ducks", "desc": "Ducks", "x": -117.914314, "y": 33.840365 }, "geometry": { "type": "Point", "coordinates": [ -117.914314, 33.840365, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "New Jersey Devils", "desc": "Devils", "x": -74.757385, "y": 39.513788 }, "geometry": { "type": "Point", "coordinates": [ -74.757385, 39.513788, 0.0 ] } }
+]
+}
